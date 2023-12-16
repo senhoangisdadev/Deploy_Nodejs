@@ -7,9 +7,9 @@ app.get('/', (req, res) => {
 });
 app.get('/mysql', (req, res) => {
     var con = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "Gent@lment1980"
+        host: "lab1.cypy9rzv0wtk.ap-southeast-1.rds.amazonaws.com",
+        user: "admin",
+        password: "mMr8hB0S7qYZgPD"
     });
     con.connect(function (err) {
         if (err) {
