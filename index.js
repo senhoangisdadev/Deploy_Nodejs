@@ -37,6 +37,9 @@ app.get('/mysql', (req, res) => {
     });
 })
 
+// Middleware để xử lý phần thân yêu cầu
+app.use(express.json());
+
 // Tạo một bệnh nhân mới
 app.post('/patients', (req, res) => {
   const { name, age, address } = req.body;
